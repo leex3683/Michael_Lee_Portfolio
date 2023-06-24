@@ -1,5 +1,5 @@
 *{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 main{
@@ -7,12 +7,12 @@ main{
 }
 
 header {
-
-    font-size: 200%;
+    font-size:200%;
     width: 100%;
     margin:auto;
     border-radius: 20px 20px 0 0;
-    background-color: rgb(110, 207, 115);
+    background-color: rgb(201, 201, 201);
+    /* box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 10px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
 }
 
 nav{
@@ -27,56 +27,49 @@ nav a {
     color: black;
 }
 
+
+
+
+/* Styles for Professional Experience Boxes */
+.lightblue{
+    background-color: lightblue;
+}
+.peachpuff{
+    background-color: peachpuff;
+}
+
+.khaki{
+    background-color: khaki;
+
+}
+
+.cornflowerblue{
+    background-color: cornflowerblue;
+}
+
+.palegreen{
+    background-color: palegreen;
+}
+
 .banners {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 200px;
     width: 100%;
-    background-color: rgb(214, 214, 172);
-}
-
-.left1{
-    display: flex;
-    justify-content: right;
-    background-color: rgb(255, 255, 255);
-    min-width: auto;
-    font-size: 70px;
-    border-top:solid;
-    float: right;
-    margin-right: 5px;
-
-}
-
-.bigcard{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    flex: 2 0 0;
-    min-width: 100%;
-    height: 700px;
-    margin-bottom:5px;
-    background-color: rgb(110, 207, 115);
-    border-radius: 20px 20px 20px 20px;
+    background-color: rgb(201, 201, 201);
     font-size: 30px;
 }
 
-.card{
-    margin-bottom:5px;
-    margin-right: 5px;
-    border-radius: 20px 20px 20px 20px; 
-}
-
-.right{
-    display: flex;
-    flex-flow: row wrap;
-}
-
+/* Sections are "Developed Apps"
+and "Professional Experience"
+which are made of up a left and right
+aside */
 section {
     display: flex;
     margin-bottom: 10px;
     margin-top: 10px;
-
 }
 
 section div {
@@ -87,64 +80,175 @@ section div {
     flex: 1 0 0;
     min-width: 350px;
     height: 350px;
-    background-color: rgb(110, 207, 115);
+    background-color: rgb(222, 222, 222);
     border-radius: 20px;
 }
 
-section div h2 {
-    
+/* Left Asides */
+.left1{
     display: flex;
-    justify-content: center;
-    background-color: beige;
-    margin-right:auto;
-    margin-left:auto;
-    height: 50px;
-    width: 50%;
-   
+    justify-content: right;
+    background-color: rgb(255, 255, 255);
+    min-width: 500px;
+    font-size: 70px;
+    border-top:solid;
+    float: right;
+    margin-right: 5px;
+
 }
 
-section div p {
-top:0;
-margin: 5px;
+/* Right Asides */
+.right{
+    display: flex;
+    flex-flow: row wrap;
 }
 
+/* ------------------------------- */
+/* Developed Applications Section  */
+/* ------------------------------- */
+
+/* Emphasized Application */
+.bigcard{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 2 0 0;
+    min-width: 98%;
+    height: 700px;    
+    margin-bottom:15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: rgb(222, 222, 222);
+    border-radius: 20px 20px 20px 20px;
+    font-size: 25px;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 10px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+   }
+
+.bigcard h2 {
+    height: 100px;
+    padding: 10px;
+}
+
+.bigcard p{
+    padding:20px;
+}
+
+/* Other applications */
+.card{
+    display:flex;
+    margin-bottom:15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 20px 20px 20px 20px; 
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 10px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card p {
+    font-size: 30px;
+    padding:20px;
+}
+
+/* Card Headers */
 h2 {
     transition: all .5s ease-in-out;
- 
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(94, 94, 94);
+    margin-right:auto;
+    margin-left:auto;
+    padding:10px;
+    height: 70px;
+    width: 50%;
+    color:rgb(191, 197, 202);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 10px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
+/* Header Translation on hover */
 div:hover h2 {
     transform:  translate(-50%);
 }
+/* ------------------------------- */
+/* Professional Experience Section */
+/* ------------------------------- */
+.ProExp{
+    display: flex;
+    flex-flow: row wrap;
+}
 
+box {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 10px;
+    width: 90px;
+    height: 90px;
+    margin:10px;
+    border: solid 1px;
+    padding:5px;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 10px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+ 
+}
 
+.biggerbox{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 10px;
+    width: 140px;
+    height: 140px;
+    margin:10px;
+    border: solid 1px; 
+    text-align: center;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 10px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
 
-/* Tablets - header changes color */
+/* Tablets */
 @media screen and (max-width: 992px) {
     .card, .left1 {
       min-width:50%;
-    }
-  }
-  /* TODO: Use media query to change the width of the cards so they are stacked on top of each other at 768px or smaller */
-  /* Large smartphones - navbar changes color */
-  @media screen and (max-width: 786px) {
-    .card {
-      min-width:100%;
-    }
-  }
-  
-  @media screen and (max-width: 786px) {
-    section {
       display: flex;
-      flex-flow:column wrap;
+      align-items:center;
     }
   }
-  
-  @media screen and (max-width: 786px) {
+@media screen and (max-width: 992px) {
     section {
       display: flex;
       flex-flow:column wrap;
       align-items:center;
     }
   }
+
+@media screen and (max-width: 992px) {
+    .left1 {
+      margin-bottom: 15px;
+    }
+  }
+
+  /* Large smartphones  */
+@media screen and (max-width: 786px) {
+    .card {
+      min-width:100%;
+    }
+  }
   
+@media screen and (max-width: 786px) {
+    section {
+      display: flex;
+      flex-flow:column wrap;
+    }
+  }
+@media screen and (max-width: 786px) {
+    .left1 {
+      margin-bottom: 15px;
+    }
+  }
