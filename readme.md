@@ -7,7 +7,7 @@ This website is an online portfolio that contains information and links to some 
 [Michael Lee Digital Portfolio Direct Link](https://leex3683.github.io/Michael_Lee_Portfolio/)
 
 ![Michael Lee Digital Portfolio | Screenshot](PortfolioScreenshot.png)
-![Alt text](PortfolioScreenshot.png)
+
 ## Installation
 
 N/A
