@@ -4,7 +4,7 @@
 
 This website is an online portfolio that contains information and links to some of my work and employment history. There is also a picture of me in the header, and contact information in the footer.
 
-[Michael Lee Digital Portfolio Direct Link](leex3683.github.io/Michael_Lee_Portfolio/)
+[Michael Lee Digital Portfolio Direct Link](https://leex3683.github.io/Michael_Lee_Portfolio/)
 
 ![Michael Lee Digital Portfolio | Screenshot](PortfolioScreenshot.png)
 ![Alt text](PortfolioScreenshot.png)
