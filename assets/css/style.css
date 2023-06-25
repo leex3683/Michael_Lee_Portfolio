@@ -7,28 +7,50 @@ main{
 }
 
 header {
-    font-size:200%;
+    position: relative;
     width: 100%;
     margin:auto;
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0px 0px;
     background-color: rgb(201, 201, 201);
-    /* box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 10px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+    z-index: 2;
 }
 
 nav{
     display: flex;
     flex-flow: row wrap;
     justify-content: right;
+    z-index: 2;
+    margin-right:10px;
 }
 
 nav a {
     margin-left: 20px;
     text-decoration: none;
-    color: black;
+    color:rgb(191, 197, 202);
+    z-index: 2;
 }
 
+.navlinks{
+    font-size: 15px;
+}
 
+bottom {
+    display: flex;
+    flex-flow: row wrap;
+}
 
+bottom p {
+    font-size: 70px;
+}
+
+img {
+    Margin:50px;
+    width:20%;
+    min-width: 20%;
+    border:solid 1px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 10px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
 
 /* Styles for Professional Experience Boxes */
 .lightblue{
@@ -40,7 +62,6 @@ nav a {
 
 .khaki{
     background-color: khaki;
-
 }
 
 .cornflowerblue{
@@ -51,15 +72,16 @@ nav a {
     background-color: palegreen;
 }
 
-.banners {
+.FootContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 400px;
     width: 100%;
     background-color: rgb(201, 201, 201);
-    font-size: 30px;
+    font-size: 20px;
+    padding: 10px;
 }
 
 /* Sections are "Developed Apps"
@@ -72,11 +94,10 @@ section {
     margin-top: 10px;
 }
 
-section div {
+section container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: flex-start;
     flex: 1 0 0;
     min-width: 350px;
     height: 350px;
@@ -87,14 +108,13 @@ section div {
 /* Left Asides */
 .left1{
     display: flex;
-    justify-content: right;
     background-color: rgb(255, 255, 255);
     min-width: 500px;
-    font-size: 70px;
+    max-width: 500px;
+    font-size: 30px;
     border-top:solid;
     float: right;
-    margin-right: 5px;
-
+    /* margin-right: 5px; */
 }
 
 /* Right Asides */
@@ -106,16 +126,16 @@ section div {
 /* ------------------------------- */
 /* Developed Applications Section  */
 /* ------------------------------- */
-
 /* Emphasized Application */
 .bigcard{
+    position:relative;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     flex: 2 0 0;
     min-width: 98%;
-    height: 700px;    
+    height: 650px;    
     margin-bottom:15px;
     margin-right: 10px;
     margin-left: 10px;
@@ -123,23 +143,37 @@ section div {
     border-radius: 20px 20px 20px 20px;
     font-size: 25px;
     box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 10px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-   }
+}
+
+button {
+    font-size: 20px;
+    color:rgb(191, 197, 202);
+    background-color:  rgb(94, 94, 94);
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 10px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border: none;
+    padding: 10px;
+}
+
+a {    
+    all:unset;
+    cursor: pointer; 
+}
 
 .bigcard h2 {
     height: 100px;
     padding: 10px;
-}
-
-.bigcard p{
-    padding:20px;
+    opacity: 1;
 }
 
 /* Other applications */
 .card{
+    position: relative;
     display:flex;
     margin-bottom:15px;
     margin-right: 10px;
     margin-left: 10px;
+    height: 500px;
     border-radius: 20px 20px 20px 20px; 
     box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 10px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     flex-direction: column;
@@ -147,7 +181,7 @@ section div {
 }
 
 .card p {
-    font-size: 30px;
+    font-size: 26px;
     padding:20px;
 }
 
@@ -157,22 +191,100 @@ h2 {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    align-items: center;
     text-align: center;
     background-color: rgb(94, 94, 94);
-    margin-right:auto;
-    margin-left:auto;
-    padding:10px;
+    /* margin-right:auto;
+    margin-left:auto; */
+    padding: 10px;
     height: 70px;
     width: 50%;
     color:rgb(191, 197, 202);
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 10px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    z-index: 2;
+    opacity: 1;
+    font-size: 25px;
 }
 
-/* Header Translation on hover */
-div:hover h2 {
+.HeaderHeader{
+    position:absolute;
+    background-color: rgb(94, 94, 94);
+    border-radius: 20px 20px 0px 0px;
+    min-height: 40px;
+    min-width: 100%;
+    z-index: 1;
+}
+
+.CardHeaderL{
+    position:absolute;
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+    min-height: 175px;
+    z-index: 1;
+    background-image: url("../images/FlashCards.avif");
+    background-size: cover;
+    background-position: center;    
+}
+
+.CardHeaderSm{
+    position:absolute;
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+    min-height: 130px;
+    z-index: 1;
+}
+
+/* Card Header Pictures */
+.cardAnimal{    
+    background-image: url("../images/Giraffe.avif");
+    background-size: cover;
+    background-position: center;    
+}
+
+.cardCustom{
+    background-image: url("../images/Excel.avif");
+    background-size: cover;
+    background-position: center;    
+}
+.cardACalc{
+    background-image: url("../images/Calculator.avif");
+    background-size: cover;
+    background-position: center;    
+}
+.cardClimb{
+    background-image: url("../images/Climbing.avif");
+    background-size: cover;
+    background-position: center;    
+}
+
+.cardExams{
+    background-image: url("../images/exam.avif");
+    background-size: cover;
+    background-position: center;   
+}
+
+.cardInProgress{
+    background-image: url("../images/hourglass.avif");
+    background-size: cover;
+    background-position: center; 
+}
+
+.cardOutstanding{
+    background-image: url("../images/checklist.avif");
+    background-size: cover;
+    background-position: center; 
+}
+
+.cardSkills{
+    background-image: url("../images/tools.avif");
+    background-size: cover;
+    background-position: center; 
+}
+
+/* Header Translation and opacity change on hover */
+container:hover h2 {
     transform:  translate(-50%);
+    opacity: .7;
 }
 /* ------------------------------- */
 /* Professional Experience Section */
@@ -186,26 +298,25 @@ box {
     display:flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 20px;
     border-radius: 10px;
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     margin:10px;
     border: solid 1px;
     padding:5px;
     box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 10px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
- 
-}
+ }
 
 .biggerbox{
     display:flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 20px;
     border-radius: 10px;
     width: 140px;
     height: 140px;
-    margin:10px;
+    margin: 10px;
     border: solid 1px; 
     text-align: center;
     padding: 5px;
@@ -214,7 +325,7 @@ box {
 
 /* Tablets */
 @media screen and (max-width: 992px) {
-    .card, .left1 {
+    .card, .left1{
       min-width:50%;
       display: flex;
       align-items:center;
@@ -231,18 +342,19 @@ box {
 @media screen and (max-width: 992px) {
     .left1 {
       margin-bottom: 15px;
+      min-width: 100%;
     }
   }
 
   /* Large smartphones  */
 @media screen and (max-width: 786px) {
-    .card {
+    .card{
       min-width:100%;
     }
   }
   
 @media screen and (max-width: 786px) {
-    section {
+    section{
       display: flex;
       flex-flow:column wrap;
     }
@@ -250,5 +362,13 @@ box {
 @media screen and (max-width: 786px) {
     .left1 {
       margin-bottom: 15px;
+      min-width: 100%;
+    }
+  }
+
+@media screen and (max-width: 786px) {
+    img {
+      margin-bottom: 15px;
+      min-width: 60%;
     }
   }

@@ -4,107 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <title>Document</title>
+    <title>Michael Lee | Portfolio</title>
 </head>
-<body id="content">
+<body>
     <header>
-        <nav>
-            <a href="#Applications">Applications</a>
-            <a href="#WorkExperience">WorkExperience</a>
-            <a href="#Education">Education</a>
-            <a href="ContactInfo">Contact Information</a>
-        </nav>
-
+        <top>
+            <banner class="HeaderHeader"></banner>
+            <nav class="navlinks">
+                <a href="#Applications">Applications |</a>
+                <a href="#WorkExperience">Experience |</a>
+                <a href="#ContactInfo">Contact Information</a>
+            </nav>
+        </top>
+        <bottom>
+            <img src="./assets/images/Portrait2.jpg" alt="Picture of Face">
+            <p>Michael Lee </p>
+        </bottom>
     </header>
-    <placeholder class="banners">placeholder</placeholder>
     <main>
         <section>
             <aside class="left1" id="Applications">
             Developed Applications
             </aside>
             <aside class="right">
-            <div class="bigcard">
-                <h2>Actuarial Flash Cards</h2>
-                <p>Test your Actuarial exam knowledge by taking on a guantlet of over 100 formulas and facts. Covered topics include:</p>
-                    <ul>
-                        <li>Exam P</li>
-                        <li>Exam FM</li>
-                        <li>Exam MLC/ALTAM/FAM-L</li>
-                        <li>Exam FAM-S</li>
-                    </ul>
-                </p>
-                
-            </div>
-            <div class="card">
-                <h2>Animal Game</h2>
-                <p>Can you guess the animal? This brain game is for all ages.</p>
-            </div>
-            <div class="card">
-                <h2>Custom Reformatting Tools</h2>
-                <p>See the tools can save you thousands of hours a year.</p>
-            </div>
-            <div class="card">
-                <h2>Actuarial Calculator</h2>
-                <p>All in one actuarial calculator with intuitive user experience.</p>
-            </div>
-            <div class="card">
-                <h2>Climbing Coach</h2>
-                <p>Program your next workout and send your project sooner.</p>
-            </div>
-            <div class="card">
-                <h2>Simple AI</h2>
-                <p>Begin to understand how AI works with these visualizations</p>
-            </div>
-
+                <container class="bigcard">
+                    <h2><a href="./FlashCards.html">Actuarial Flash Cards</a></h2>
+                    <header class="CardHeaderL"></header>
+                    <p>Application to Test Actuarial exam knowledge by taking on a guantlet of over 100 formulas and facts. Covered topics include:</p>
+                        <ul>
+                            <li>Exam P</li>
+                            <li>Exam FM</li>
+                            <li>Exam MLC/ALTAM/FAM-L</li>
+                            <li>Exam FAM-S</li>
+                        </ul>
+                    </p>
+                    <button><a href="./FlashCards.html">Go to App</a></button>                    
+                </container>
+                <container class="card">
+                    <h2>Animal Game</h2>
+                    <header class="CardHeaderSm cardAnimal"></header>
+                    <p>A unique guessing game for all ages. Exercise your brain.</p>
+                    <button><a href="./AnimalGame.html">Go to App</a></button>
+                </container>
+                <container class="card">
+                    <h2>Custom Tools</h2>
+                    <header class="CardHeaderSm cardCustom"></header>
+                    <p>Tools that could save you thousands of hours per year.</p>
+                    <button><a href="./CustomReformattingTools.html">Go to App</a></button>
+                </container>
+                <container class="card">
+                    <h2>Actuarial Calculator</h2>
+                    <header class="CardHeaderSm cardACalc"></header>
+                    <p>All in one actuarial calculator with intuitive user experience.</p>
+                    <button><a href="./ActuarialCalculator.html">Go to App</a></button>
+                </container>
+                <container class="card">
+                    <h2>Climbing Coach</h2>
+                    <header class="CardHeaderSm cardClimb"></header>
+                    <p>Fitness program for creating climbing focused regimens.</p>
+                    <button><a href="./ClimbingCoach.html">Go to App</a></button>
+                </container>
             </aside>
         </section>
         <section>
-            <aside class="left1">
-            Professional Experience
+            <aside class="left1" id="WorkExperience">
+            Certifications/ Professional Experience / Eduction
             </aside>
             <aside class="right">
             
-            <div class="card">
+            <container class="card">
                 <h2>Actuarial Exams passed</h2>
+                <header class="CardHeaderSm cardExams"></header>
                 <container class="ProExp">
                     <box class="lightblue">P</box>
                     <box class="peachpuff">FM</box>
                     <box class="khaki">MLC</box>
                 </container>
-            </div>
-            <div class="card">
+            </container>
+            <container class="card">
                 <h2>Certificates in progress</h2>
+                <header class="CardHeaderSm cardInProgress"></header>
                 <container class="ProExp">
                     <box class="cornflowerblue biggerbox">UMN Fullstack Bootcamp</box>
                     <box class="palegreen">FAM-S</box>
                 </container>
-            </div>
-            <div class="card">
+            </container>
+            <container class="card">
                 <h2>Actuarial Outstanding</h2>
+                <header class="CardHeaderSm cardOutstanding"></header>
                 <p>[add section]</p>
-            </div>
-            <div class="card">
-                <h2>In Progress</h2>
-                <ul>
-                    <li>Exam FAM-S</li>
-                </ul>
-            </div>
-            <div class="card bigcard">
+            </container>
+            <container class="card">
+                <h2>Other Skills</h2>
+                <header class="CardHeaderSm cardSkills"></header>
+                <p>[add section]</p>
+            </container>
+            <container class="card bigcard">
                 <h2>Employement History</h2>
-                <p>Placeholder</p>
-            </div>
-            <div class="card">
+                <p>[add section]</p>
+            </container>
+            <container class="card">
                 <h2>Education</h2>
-                <p>Placeholder</p>
-            </div>
+                <p>[add section]</p>
+            </container>
 
             </aside>
         </section>
-        <footer class="banners">
+        <footer class="FootContainer" id="ContactInfo">
             <h3>Contact Information</h3>
             <ul>
                 <li>Email: Michael.Lee@email.com</li>
                 <li>Cell Phone: (123) 456 - 7890</li>
+                <li>GitHub: https://github.com/leex3683</li>
             </ul>
         </footer>
     </main>
