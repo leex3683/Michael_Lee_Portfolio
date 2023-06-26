@@ -352,7 +352,7 @@ box {
     }
   }
 @media screen and (max-width: 992px) {
-    section {
+    section, bottom{
       display: flex;
       flex-flow:column wrap;
       align-items:center;
@@ -374,7 +374,7 @@ box {
   }
   
 @media screen and (max-width: 786px) {
-    section{
+    section, bottom {
       display: flex;
       flex-flow:column wrap;
       align-items: center;
