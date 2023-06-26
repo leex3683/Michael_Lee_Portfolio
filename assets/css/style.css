@@ -2,8 +2,21 @@
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+html{
+    display: flex;
+    flex-direction: column;
+    max-width: 99%;
+    margin-left: .5%;
+    margin-right:.5%;
+}
+
 main{
     flex-flow: row wrap;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -20,11 +33,11 @@ nav{
     flex-flow: row wrap;
     justify-content: right;
     z-index: 2;
-    margin-right:10px;
+    /* margin-right:10px; */
 }
 
 nav a {
-    margin-left: 20px;
+    margin-right: 20px;
     text-decoration: none;
     color:rgb(191, 197, 202);
     z-index: 2;
@@ -81,7 +94,7 @@ img {
     width: 100%;
     background-color: rgb(201, 201, 201);
     font-size: 20px;
-    padding: 10px;
+  
 }
 
 /* Sections are "Developed Apps"
@@ -98,6 +111,7 @@ section container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
     flex: 1 0 0;
     min-width: 350px;
     height: 350px;
@@ -137,8 +151,8 @@ section container {
     min-width: 98%;
     height: 650px;    
     margin-bottom:15px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-left: 1%;
+    margin-right: 1%;
     background-color: rgb(222, 222, 222);
     border-radius: 20px 20px 20px 20px;
     font-size: 25px;
@@ -170,9 +184,11 @@ a {
 .card{
     position: relative;
     display:flex;
-    margin-bottom:15px;
-    margin-right: 10px;
-    margin-left: 10px;
+    /* margin-right: 20px; */
+    width:98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
     height: 500px;
     border-radius: 20px 20px 20px 20px; 
     box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 10px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -230,6 +246,7 @@ h2 {
     position:absolute;
     background-color: white;
     border-radius: 20px 20px 0px 0px;
+
     min-height: 130px;
     z-index: 1;
 }
@@ -302,7 +319,7 @@ box {
     border-radius: 10px;
     width: 80px;
     height: 80px;
-    margin:10px;
+    margin: 10px;
     border: solid 1px;
     padding:5px;
     box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 10px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -316,7 +333,10 @@ box {
     border-radius: 10px;
     width: 140px;
     height: 140px;
-    margin: 10px;
+    size: 98%;
+    margin-left: 1%;
+    margin-right:1%;
+    /* margin: 10px; */
     border: solid 1px; 
     text-align: center;
     padding: 5px;
@@ -342,14 +362,14 @@ box {
 @media screen and (max-width: 992px) {
     .left1 {
       margin-bottom: 15px;
-      min-width: 100%;
+      min-width: 98%;
     }
   }
 
   /* Large smartphones  */
 @media screen and (max-width: 786px) {
     .card{
-      min-width:100%;
+      min-width:98%;
     }
   }
   
@@ -357,12 +377,13 @@ box {
     section{
       display: flex;
       flex-flow:column wrap;
+      align-items: center;
     }
   }
 @media screen and (max-width: 786px) {
     .left1 {
       margin-bottom: 15px;
-      min-width: 100%;
+      min-width:98%;
     }
   }
 
