@@ -316,6 +316,12 @@ h2 {
     background-position: center; 
 }
 
+.math{
+    background-image: url("../images/math.avif");
+    background-size: cover;
+    background-position: center; 
+}
+
 /* Header Translation and opacity change on hover */
 container:hover h2 {
     transform:  translate(-50%);
