@@ -270,8 +270,8 @@ h2 {
 }
 
 /* Card Header Pictures */
-.cardAnimal{    
-    background-image: url("../images/Giraffe.avif");
+.cardBudget{    
+    background-image: url("../images/Budget.avif");
     background-size: cover;
     background-position: center;    
 }
